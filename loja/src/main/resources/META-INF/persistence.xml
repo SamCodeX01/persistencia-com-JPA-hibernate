@@ -29,6 +29,8 @@
 
             <!-- Configurações opcionais úteis -->
             <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2dll.auto" value="create"/>
+
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
 

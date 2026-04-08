@@ -10,5 +10,13 @@ public class CadastroProduto {
         celular.setNome("Xiaomi Redmi");
         celular.setDescricao("Muito legal");
         celular.setPreco(new BigDecimal("800"));
+
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("loja");
+
+        EntityManager em = factory.createEntityManager();
+        em.getTransaction().begin();
+        em.persist(celuar);
+        em.getTransaction().commit();
+        em.close();
     }
 }
